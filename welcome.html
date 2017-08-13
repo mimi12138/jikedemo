@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--在IE运行最新的渲染模式-->
+    <title></title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="js/mf-pattern/mF_YSlider.css">
+    <!-- IE版本低于IE9-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/myfocus-2.0.1.min.js" type="text/javascript"></script>
+    <script src="js/mf-pattern/mF_YSlider.js" type="text/javascript"></script>
+    <script src="js/welcome.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        myFocus.set({
+            id:'picBox',
+            pattern:'mF_kdui',
+            loadIMGTimeout:0
+        })
+    </script>
+</head>
+<div class="headbox">
+    <div class="logo">
+        <img class="img-responsive img-rounded" src="image/logo2.jpg"/>
+    </div>
+    <div class="search-box">
+        <form action=""  id="search-form" role="search">
+            <input type="text" class=" search-input-text" id="search_input" name="" placeholder="请输入学校名称">
+        </form>
+        <div class="search-hot">
+            <ul>
+                <li>热门搜索：</li>
+                <li><a href="">沈阳工业大学</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<header class="header" id="header">
+    <div class="nav">
+        <div class="nav_left ">
+            <form action="" method="post">
+                <input type="text" class="search_text" placeholder="关键词"/>
+                <span class="btn glyphicon glyphicon-search">搜索一下</span>
+            </form>
+        </div>
+        <div class="nav_right ">
+            <ul>
+                <li class="active"><a href="welcome.html">主页</a></li>
+                <li><a href="">课程大全</a></li>
+                <li><a href="">高速选课</a></li>
+            </ul>
+        </div>
+    </div><!--nav结束-->
+</header>
+<div class="wrap">
+    <div class="ad" id="picBox">
+        <div class="pic">
+            <ul>
+                <li><img class="img-responsive" src="image/a2.jpg"  text="超级方便----我们是你的Super Man,只需留下你的邮箱，一旦网站恢复正常，立刻飞奔通知你去选课"></li>
+                <li></li>
+                <li><img src="image/ad4.jpg"></li>
+            </ul>
+        </div>
+    </div><!--ad结束-->
+
+</div><!--wrap结束-->
+<footer class="copyright">
+    <div class="copyright_content">
+        <ul>
+            <li><a href="welcome.html">网站首页</a></li>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">联系我们</a></li>
+            <li><a href="">意见反馈</a></li>
+            <li><a href="link.html" target="_blank"> 友情链接</a></li>
+        </ul>
+    </div>
+    <div class="copyright_foot">Copyright © 2017 www.xxx.com All Rights Reserved</div>
+</footer>
+</body>
+</html>

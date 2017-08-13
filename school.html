@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--在IE运行最新的渲染模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--初始化移动浏览显示，让视口的宽度等于物理设备上真实的分辨率，不做任何缩放-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/school.css">
+    <!-- IE版本低于IE9-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="nav_bar">
+        <ul>
+            <li>极课网</li>
+            <li><a href="">首页</a></li>
+            <li><a href="">选课</a></li>
+            <li><a href="">课程</a></li>
+        </ul>
+        <div>
+            <form action="" method="post">
+                <input type="text" class="search_text" placeholder="关键词"/>
+                <span class="btn glyphicon glyphicon-search">搜索一下</span>
+            </form>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">学校图片</div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-3">学校logo</div>
+                <div class="col-md-9"><h3>学校名称</h3>
+                    <div class="row">
+                        <span class="col-md-offset-2 badge">985</span><span class="badge">211</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                学校介绍
+            </div>
+            <div class="row">
+                <button class="btn btn-default"><span class="glyphicon glyphicon-heart"></span>收藏</button>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row"><h2><span class="glyphicon glyphicon-road"></span>TimeLine</h2></div>
+            <div class="row">
+                <div id="timeline"></div>
+            </div>
+            <div class="row">
+                <h2>该网站目前的状态为：<span class="status">连通</span></h2>
+                <div class="col-md-4">
+                    <button class="btn btn-success">去选课</button>
+                </div>
+                <div class="col-md-8">
+                    立刻前往${uniAlgoModel.university}官方选课网站  </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <button class="btn btn-primary order">恢复访问提醒</button>
+                </div>
+                <div class="col-md-8">
+                    设定一个时间区间，在这个区间内，一旦校园网处于可连接状态，我们会立刻通过微信（暂未开通）或邮箱提醒您。
+                </div>
+            </div>
+
+                <!--模态对话框-->
+                <div class="modal" id="ordermodal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title">预约选课</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal" role="form">
+                                    <!--<div class="form-group">
+                                        <label for="inputEmail" class="col-sm-2 control-label">邮箱</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputEmail" placeholder="请输入您的邮箱地址">
+                                        </div>
+                                    </div>-->
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="col-sm-2 control-label">验证码</label>
+                                        <div class="col-sm-4">
+                                            <input type="password" class="form-control" id="inputPassword" placeholder="请输入验证码">
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary">保存</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+        </div>
+    </div>
+</div>
+
+<footer class="copyright">
+
+</footer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/school.js"></script>
+</body>
+</html>
